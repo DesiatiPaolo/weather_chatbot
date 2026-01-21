@@ -11,3 +11,15 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Get weather when city is provided directly
+  steps:
+  - intent: weather_for_location
+  - action: utter_getting_weather
+  - action: action_get_weather
+
+- rule: Get weather after city is provided
+  steps:
+  - intent: city_info
+  - action: utter_getting_weather
+  - action: action_get_weather
