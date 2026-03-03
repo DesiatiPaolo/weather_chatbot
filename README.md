@@ -1,5 +1,5 @@
 # weather_chatbot
-RASA based chatbot
+RASA based chatbot.
 It requires a OpenWeatherMap API key.
 
 ##  Running the chatbot
